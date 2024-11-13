@@ -1,0 +1,199 @@
+
+.container {
+    max-width: 600px;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: #dbc9da;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+
+h1 {
+    text-align: center;
+    color: #885980;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#new-task {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#new-task:focus {
+    border-color: #885980;
+    outline: none;
+}
+
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    background-color: #a38ba3;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #e2bde2;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+#char-counter {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #885980;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+li.task-item:hover {
+    background-color: #f1f8ff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.1);
+}
+
+
+.task-text {
+    flex: 1;
+    color: #333;
+    font-size: 16px;
+    overflow-wrap: break-word;
+}
+
+
+.task-buttons {
+    display: flex;
+    gap: 8px; 
+}
+
+
+li.task-item button {
+    background-color: #8eaecf;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-left: 10px;
+}
+
+li.task-item button:hover {
+    background-color: #aec8e2;
+}
+
+li.task-item button:active {
+    transform: scale(0.95);
+}
+
+/* Stylizacja przycisku "Usuń" na czerwono */
+li.task-item button:last-child {
+    background-color: #d89ca2;
+}
+
+li.task-item button:last-child:hover {
+    background-color: #ffcacf;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 30px auto;
+    }
+
+    #task-list {
+        max-width: 90%;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+    .task-text {
+        font-size: 15px;
+    }
+    li.task-item button{
+        margin-top: 10px;
+    }
+}
+
+/* Telefony (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task-text {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .task-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    li.task-item{
+        width: 100%;
+    }
+    li.task-item button{
+        margin-top: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 5px 10px;
+        width: 48%;
+    }
+}
+
