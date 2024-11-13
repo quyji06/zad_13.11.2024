@@ -1,7 +1,7 @@
 
 .container {
     max-width: 600px;
-    margin: 200px auto;
+    margin: 230px auto;
     padding: 20px;
     background-color: #dbc9da;
     border-radius: 40px;
@@ -108,7 +108,7 @@ li.task-item:hover {
 
 
 li.task-item button {
-    background-color: #8eaecf;
+    background-color: #ac8dad;
     color: #fff;
     border: none;
     padding: 6px 10px;
@@ -119,7 +119,7 @@ li.task-item button {
 }
 
 li.task-item button:hover {
-    background-color: #aec8e2;
+    background-color: #d1aee2;
 }
 
 li.task-item button:active {
